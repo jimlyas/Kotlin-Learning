@@ -2,7 +2,7 @@
   "name": "Kotlin Academy - Learn Kotlin DSA",
   "short_name": "Kotlin Academy",
   "description": "Master Kotlin from fundamentals to advanced algorithms",
-  "start_url": "/Kotlin-Learning/",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#7F52FF",
@@ -17,5 +17,5 @@
   ],
   "categories": ["education", "programming"],
   "lang": "en",
-  "scope": "/"
+  "scope": "./"
 }
