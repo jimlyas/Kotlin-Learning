@@ -1,0 +1,4 @@
+- Add Kotlin logo as Web icon
+- Add a way to choose part when opening a content
+- Make the application as Progressive Web Application
+- Implement local storage and button to each content to track progress

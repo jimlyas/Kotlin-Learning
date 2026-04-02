@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 2: Data Structures - Kotlin Academy</title>
+  <!-- Icons handled via SVG -->
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+    </button>
+    <a href="../index.html" class="logo">Kotlin Academy</a>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" x2="12" y1="1" y2="3"/><line x1="12" x2="12" y1="21" y2="23"/><line x1="4.22" x2="5.64" y1="4.22" y2="5.64"/><line x1="18.36" x2="19.78" y1="18.36" y2="19.78"/><line x1="1" x2="3" y1="12" y2="12"/><line x1="21" x2="23" y1="12" y2="12"/></svg>
+      </button>
+      <button class="profile-btn">
+        <div class="profile-avatar">KA</div>
+        <span class="profile-name">Learner</span>
+      </button>
+    </div>
+  </nav>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h1 class="sidebar-title">Kotlin Academy</h1>
+      <p class="sidebar-subtitle">The Digital Atelier</p>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="../index.html" class="nav-item">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <span>Home</span>
+      </a>
+      <a href="../part-1/index.html" class="nav-item" data-lesson="1-1">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        <span>Part 1: Introduction</span>
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      </a>
+      <a href="index.html" class="nav-item active">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="6" height="6" x="12" y="12"/><rect width="6" height="6" x="6" y="6"/><rect width="6" height="6" x="18" y="6"/><path d="M12 12v-6"/><path d="M18 6v-2"/><path d="M6 6v-2"/></svg>
+        <span>Part 2: Data Structures</span>
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      </a>
+      <a href="../part-3/index.html" class="nav-item" data-lesson="3-1">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" x2="20" y1="19" y2="19"/></svg>
+        <span>Part 3: Algorithms</span>
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      </a>
+    </nav>
+    <div class="sidebar-footer">
+      <button class="resume-btn" data-part="2">Continue Learning</button>
+    </div>
+  </aside>
+
+  <div class="overlay" id="overlay"></div>
+
+  <main class="main-content">
+    <div class="content-wrapper page-transition">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        <span class="breadcrumb-current">Part 2: Data Structures</span>
+      </div>
+
+      <header class="part-header">
+        <div class="part-info">
+          <span class="part-badge">Part 2</span>
+          <h1 class="part-title">Data Structures</h1>
+          <p class="part-description">
+            Master essential data structures with real-world use cases and LeetCode practice problems. Learn when and how to use each structure effectively.
+          </p>
+        </div>
+        <div class="part-progress-card" data-progress-part="2">
+          <span class="part-progress-label">Your Progress</span>
+          <span class="part-progress-value">0/8</span>
+          <div class="part-progress-bar">
+            <div class="part-progress-fill" style="width: 0%"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="lessons-grid">
+        <a href="2-1-big-o-notation.html" class="lesson-card" data-lesson="2-1">
+          <div class="lesson-number">1</div>
+          <div class="lesson-info">
+            <h3 class="lesson-name">Big O Notation</h3>
+            <p class="lesson-meta"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>20 min</p>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+
+        <a href="2-2-arrays.html" class="lesson-card" data-lesson="2-2">
+          <div class="lesson-number">2</div>
+          <div class="lesson-info">
+            <h3 class="lesson-name">Arrays</h3>
+            <div class="lesson-tags">
+              <span class="lesson-tag playground">Playground</span>
+              <span class="lesson-tag leetcode">LeetCode</span>
+            </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+
+        <a href="2-3-linked-lists.html" class="lesson-card" data-lesson="2-3">
+          <div class="lesson-number">3</div>
+          <div class="lesson-info">
+            <h3 class="lesson-name">Linked Lists</h3>
+            <div class="lesson-tags">
+              <span class="lesson-tag playground">Playground</span>
+              <span class="lesson-tag leetcode">LeetCode</span>
+            </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+
+        <a href="2-4-stack.html" class="lesson-card" data-lesson="2-4">
+          <div class="lesson-number">4</div>
+          <div class="lesson-info">
+            <h3 class="lesson-name">Stack</h3>
+            <div class="lesson-tags">
+              <span class="lesson-tag playground">Playground</span>
+              <span class="lesson-tag leetcode">LeetCode</span>
+            </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+
+        <a href="2-5-queue.html" class="lesson-card" data-lesson="2-5">
+          <div class="lesson-number">5</div>
+          <div class="lesson-info">
+            <h3 class="lesson-name">Queue</h3>
+            <div class="lesson-tags">
+              <span class="lesson-tag playground">Playground</span>
+              <span class="lesson-tag leetcode">LeetCode</span>
+            </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+
+        <a href="2-6-hash-map.html" class="lesson-card" data-lesson="2-6">
+          <div class="lesson-number">6</div>
+          <div class="lesson-info">
+            <h3 class="lesson-name">Hash Map</h3>
+            <div class="lesson-tags">
+              <span class="lesson-tag playground">Playground</span>
+              <span class="lesson-tag leetcode">LeetCode</span>
+            </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+
+        <a href="2-7-binary-tree-bst.html" class="lesson-card" data-lesson="2-7">
+          <div class="lesson-number">7</div>
+          <div class="lesson-info">
+            <h3 class="lesson-name">Binary Tree / BST</h3>
+            <div class="lesson-tags">
+              <span class="lesson-tag playground">Playground</span>
+              <span class="lesson-tag leetcode">LeetCode</span>
+            </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+
+        <a href="2-8-graphs.html" class="lesson-card" data-lesson="2-8">
+          <div class="lesson-number">8</div>
+          <div class="lesson-info">
+            <h3 class="lesson-name">Graphs</h3>
+            <div class="lesson-tags">
+              <span class="lesson-tag leetcode">LeetCode</span>
+            </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <script src="../js/theme.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
