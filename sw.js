@@ -1,47 +1,48 @@
-const CACHE_NAME = 'kotlin-academy-v1';
+const BASE_PATH = '/Kotlin-Learning/';
+const CACHE_NAME = 'kotlin-academy-v2';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/favicon.svg',
-  '/css/styles.css',
-  '/js/main.js',
-  '/js/theme.js',
-  '/manifest.json'
+  BASE_PATH,
+  BASE_PATH + 'index.html',
+  BASE_PATH + 'favicon.svg',
+  BASE_PATH + 'css/styles.css',
+  BASE_PATH + 'js/main.js',
+  BASE_PATH + 'js/theme.js',
+  BASE_PATH + 'manifest.json'
 ];
 
 const part1Lessons = [
-  '/part-1/index.html',
-  '/part-1/1-1-what-is-kotlin.html',
-  '/part-1/1-2-first-program.html',
-  '/part-1/1-3-variables.html',
-  '/part-1/1-4-null-safety.html',
-  '/part-1/1-5-control-flow.html',
-  '/part-1/1-6-functions.html',
-  '/part-1/1-7-oop.html',
-  '/part-1/1-8-collections.html',
-  '/part-1/1-9-lambdas-hof.html',
-  '/part-1/1-10-extension-functions.html'
+  BASE_PATH + 'part-1/index.html',
+  BASE_PATH + 'part-1/1-1-what-is-kotlin.html',
+  BASE_PATH + 'part-1/1-2-first-program.html',
+  BASE_PATH + 'part-1/1-3-variables.html',
+  BASE_PATH + 'part-1/1-4-null-safety.html',
+  BASE_PATH + 'part-1/1-5-control-flow.html',
+  BASE_PATH + 'part-1/1-6-functions.html',
+  BASE_PATH + 'part-1/1-7-oop.html',
+  BASE_PATH + 'part-1/1-8-collections.html',
+  BASE_PATH + 'part-1/1-9-lambdas-hof.html',
+  BASE_PATH + 'part-1/1-10-extension-functions.html'
 ];
 
 const part2Lessons = [
-  '/part-2/index.html',
-  '/part-2/2-1-big-o-notation.html',
-  '/part-2/2-2-arrays.html',
-  '/part-2/2-3-linked-lists.html',
-  '/part-2/2-4-stack.html',
-  '/part-2/2-5-queue.html',
-  '/part-2/2-6-hash-map.html',
-  '/part-2/2-7-binary-tree-bst.html',
-  '/part-2/2-8-graphs.html'
+  BASE_PATH + 'part-2/index.html',
+  BASE_PATH + 'part-2/2-1-big-o-notation.html',
+  BASE_PATH + 'part-2/2-2-arrays.html',
+  BASE_PATH + 'part-2/2-3-linked-lists.html',
+  BASE_PATH + 'part-2/2-4-stack.html',
+  BASE_PATH + 'part-2/2-5-queue.html',
+  BASE_PATH + 'part-2/2-6-hash-map.html',
+  BASE_PATH + 'part-2/2-7-binary-tree-bst.html',
+  BASE_PATH + 'part-2/2-8-graphs.html'
 ];
 
 const part3Lessons = [
-  '/part-3/index.html',
-  '/part-3/3-1-sorting.html',
-  '/part-3/3-2-searching.html',
-  '/part-3/3-3-recursion.html',
-  '/part-3/3-4-dynamic-programming.html',
-  '/part-3/3-5-graph-traversal.html'
+  BASE_PATH + 'part-3/index.html',
+  BASE_PATH + 'part-3/3-1-sorting.html',
+  BASE_PATH + 'part-3/3-2-searching.html',
+  BASE_PATH + 'part-3/3-3-recursion.html',
+  BASE_PATH + 'part-3/3-4-dynamic-programming.html',
+  BASE_PATH + 'part-3/3-5-graph-traversal.html'
 ];
 
 self.addEventListener('install', (event) => {
